@@ -8,11 +8,13 @@ Place any general info that the team needs to know here. (If anyone knows markdo
 
 A general Todo list.
 
-1. ~~Implent users and log on~~
+1. ~~Implent users and log on~~ Roy
 
-2. ~~Implment logout~~
+2. ~~Implment logout~~ Roy
 
-3. Create model for units
+3. ~~ Create model for units~~ Roy (will need to be updated when wizard is finished)
+
+4. Change static dashboard to retrieve data from unit database
 
 4. Create wizard steps for unit creation
 

@@ -1,0 +1,32 @@
+body {
+  padding-top: 5rem;
+}
+
+.headline {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.row {
+  text-align: center;
+}
+
+.solution{
+  padding-top: 4rem;
+}
+.solution img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.pricing {
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.pricing p {
+  font-size: 2rem;
+}

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  unit_name: MyString
+  unit_type: MyString
+  admin_people: 1
+  tech_people: 1
+  rating: 1
+  balance: 9.99
+  ocost: 9.99
+
+two:
+  user: two
+  unit_name: MyString
+  unit_type: MyString
+  admin_people: 1
+  tech_people: 1
+  rating: 1
+  balance: 9.99
+  ocost: 9.99

@@ -4,6 +4,25 @@
 
 Place any general info that the team needs to know here. (If anyone knows markdown, prettyfy it please.)
 
+## To-do
+
+A general Todo list.
+
+1. ~~Implent users and log on~~
+
+2. ~~Implment logout~~
+
+3. Create model for units
+
+4. Create wizard steps for unit creation
+
+4. Attach units to users
+
+4. Make dashbaord display units of the user
+
+5. Link homepage buttons to sign up
+
+
 ## Important Folders
 
 The "projectInfo" folder has the mock ups. Also place any documents that you need to reference in here.(Flow charts, diagrams etc)
@@ -43,13 +62,3 @@ vendor/	A place for all third-party code. In a typical Rails application this in
 
 .gitignore	This file tells git which files (or patterns) it should ignore. See Github - Ignoring files for more info about ignoring files.
 
-## To-do
-
-A general Todo list.
-
-*Implent users and log on
-*Implment logout
-
-*Create model for units
-
-*Create winzard/ steps for unit creation

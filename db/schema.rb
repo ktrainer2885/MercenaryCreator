@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121172749) do
+ActiveRecord::Schema.define(version: 20171208234427) do
+
+  create_table "units", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "unit_name"
+    t.string "unit_type"
+    t.integer "admin_people"
+    t.integer "tech_people"
+    t.integer "rating"
+    t.decimal "balance"
+    t.decimal "ocost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_units_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

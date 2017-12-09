@@ -12,7 +12,7 @@ A general Todo list.
 
 2. ~~Implment logout~~ Roy
 
-3. ~~ Create model for units~~ Roy (will need to be updated when wizard is finished)
+3. ~~Create model for units~~ Roy (will need to be updated when wizard is finished)
 
 4. Change static dashboard to retrieve data from unit database
 

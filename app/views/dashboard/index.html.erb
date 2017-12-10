@@ -23,7 +23,7 @@
         </nav>
 
       <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-        <h1>Dashboard</h1>
+        <h1> <%= @user.email %>'s Dashboard</h1>
 
         <section class="row text-center placeholders">
             <div class="col-6 col-sm-3 my-auto placeholder">
@@ -47,56 +47,38 @@
         
         </section>
 
-        <h2>Section title</h2>
+        <h2>Units</h2>
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>
               <tr>
-                <th>#</th>
+                <th>Id</th>
                 <th>Unit Name </th>
-                <th>Rating</th>
-                <th>Money</th>
-                <th>Size</th>
+                <th>Type</th>
+                <th>Balance</th>
+                <th>Operating Cost</th>
+                <th></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>Roy's Boys</td>
-                <td>B</td>
-                <td>500,000$</td>
-                <td>Multi-Regiment</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>Ted's Toros</td>
-                <td>F</td>
-                <td>-50,000$</td>
-                <td>Lance</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>LAMS Arise</td>
-                <td>C</td>
-                <td>890,000</td>
-                <td>Company</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>Screaming Eagles</td>
-                <td>B</td>
-                <td>582,000</td>
-                <td>Battalion</td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>ACM's Revenge</td>
-                <td>A*</td>
-                <td>500,000,000$</td>
-                <td>Army</td>
-              </tr>
+              <% @units.each do |unit| %>
+                <tr>
+                  <td> <%= unit.id %> </td>
+                  <td> <%= unit.unit_name %> </td>
+                  <td> <%= unit.unit_type %> </td>
+                  <td> <%= unit.balance %> </td>
+                  <td> <%= unit.ocost %> </td>
+                  <td> <a class="btn btn-warning">Edit</a></td>
+                  <td> <a class="btn btn-danger">Delete</a></td>
+                </tr>
+              <% end %>
             </tbody>
           </table>
+          <div>
+            <a class="btn btn-primary">Add New Unit</a>
+            No Wizard
+          </div>
         </div>
       </main>
     </div>

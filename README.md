@@ -14,16 +14,20 @@ A general Todo list.
 
 3. ~~Create model for units~~ Roy (will need to be updated when wizard is finished)
 
-4. Change static dashboard to retrieve data from unit database
+4. ~~Change static dashboard to retrieve data from unit database~~ Roy
 
-4. Create wizard steps for unit creation
+4. Create wizard steps for unit creation Austin
 
-4. Attach units to users
+4. ~~Attach units to users~~ Roy
 
-4. Make dashbaord display units of the user
+4. ~~Make dashbaord display units of the user~~ Roy
 
-5. Link homepage buttons to sign up
+4. Create Interface to edit create and destroy Units
 
+
+## Bug-Fixes
+
+1. Link homepage buttons to sign up
 
 ## Important Folders
 

@@ -48,7 +48,7 @@
                   <td> <%= unit.unit_type %> </td>
                   <td> <%= unit.balance %> </td>
                   <td> <%= unit.ocost %> </td>
-                  <td> <a class="btn btn-warning" href="/dashboard/edit">Edit</a></td>
+                  <td> <form action="/dashboard/edit"> <input type="hidden" name="unit_id" value=<%=unit.id %>> <input type="submit" class="btn btn-warning" value="Edit"> </form></td>
                   <td> <a class="btn btn-danger">Delete</a></td>
                 </tr>
               <% end %>

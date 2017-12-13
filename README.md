@@ -22,7 +22,7 @@ A general Todo list.
 
 4. ~~Make dashbaord display units of the user~~ Roy
 
-4. Create Interface to edit create and destroy Units
+4. Create Interface to ~~edit~~ , create and destroy Units
 
 
 ## Bug-Fixes

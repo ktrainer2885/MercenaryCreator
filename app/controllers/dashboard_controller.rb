@@ -35,4 +35,20 @@ class DashboardController < ApplicationController
 
   end
 
+  def create_unit
+    
+    @user.units.create(
+      unit_name: params["unit_name"],
+      unit_type: params["unit_type"],
+      admin_people: params["admin_people"],
+      tech_people: params["tech_people"],
+      rating: params["rating"],
+      balance: params["balance"],
+      ocost: params["ocost"],
+    )
+
+
+    redirect_to action: "index"
+  end
+
 end

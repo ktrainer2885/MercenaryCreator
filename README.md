@@ -22,12 +22,16 @@ A general Todo list.
 
 4. ~~Make dashbaord display units of the user~~ Roy
 
-4. Create Interface to ~~edit~~ , create and destroy Units
+4. Create Interface to ~~edit~~ , ~~create~~ and destroy Units (Roy)
+
+4. Make the units in the dashboard table selectable.
 
 
 ## Bug-Fixes
 
 1. Link homepage buttons to sign up
+
+2. Nav Bar top, have register, sign in sign out react if user is signed in or out
 
 ## Important Folders
 

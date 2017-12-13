@@ -59,7 +59,7 @@ class DashboardController < ApplicationController
   end
 
   def delete_unit
-    @user.find(params["unit_id"]).destroy
+    Unit.find(params["unit_id"]).destroy
     redirect_to action: "index"
   end
 end

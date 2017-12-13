@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/dashboard/stage1', to: "dashboard#stage1"
   get '/dashboard/stage2', to: "dashboard#stage2" 
   get '/dashboard/stage3', to: 'dashboard#stage3'
-
+  get '/dashboard/stage4', to: 'dashboard#stage4'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

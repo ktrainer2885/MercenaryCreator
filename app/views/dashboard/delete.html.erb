@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <div class="row">
+    <h2>Are you sure you want to delete?</h2><br>
+    <form action="/dashboard/delete_update" method ="POST"> <input type="hidden" name="unit_id" value=<%=@unit.id %>> <input type="submit" class="btn btn-danger" value="Delete"></form>
+    <a class="btn btn-primary" href="/dashboard">Cancel</a>

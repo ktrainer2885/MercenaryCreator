@@ -49,7 +49,7 @@
                   <td> <%= unit.balance %> </td>
                   <td> <%= unit.ocost %> </td>
                   <td> <form action="/dashboard/edit"> <input type="hidden" name="unit_id" value=<%=unit.id %>> <input type="submit" class="btn btn-warning" value="Edit"> </form></td>
-                  <td> <a class="btn btn-danger">Delete</a></td>
+                  <td> <form action="/dashboard/delete"> <input type="hidden" name="unit_id" value=<%=unit.id %>> <input type="submit" class="btn btn-danger" value="Delete"> </form></td>
                 </tr>
               <% end %>
             </tbody>

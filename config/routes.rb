@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post '/dashboard/update', to: "dashboard#update"
   get  '/dashboard/create', to: "dashboard#create"
   post '/dashboard/create_unit', to: "dashboard#create_unit"
+  get '/dashboard/delete', to: "dashboard#delete"
+  post '/dashboard/delete_unit', to: "dashboard#delete_unit"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

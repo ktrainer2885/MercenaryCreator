@@ -1,6 +1,33 @@
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Stage 3: Procure Equipment and Hire Personal</h1>
           <p> Step 1: Buy all the Stuff!</p>
+
+          <form action="/dashboard/stage4" method="GET">
+            <div class ="form-groups">
+                Cost of equipment purchased: <input type="text" name="equip_purch">
+            </div>
+            <div class ="form-groups">
+                Number of Administrators needed: <input type="text" name="admin_people">
+            </div>
+            <div class ="form-groups">
+                Number of Technicians needed: <input type="text" name="tech_people">
+            </div>
+            <div class ="form-groups">
+                Rating of the Unit (An Integer): <input type="text" name="rating">
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Stage 4">
+          </form>
+         
+           
+          
+           
+           
+
+
+          
+         
+         <!-- Due to the wizard not being finished, The above is being used instead
           <form>
             Equipment and Modifiers: <input type="text" name="Equipment and Modifiers"><br>  
           </form>
@@ -27,4 +54,5 @@
             </form>
           </div>
         </section>
+      -->
         </main>

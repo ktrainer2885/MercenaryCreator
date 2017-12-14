@@ -2,6 +2,7 @@ class DashboardController < ApplicationController
   skip_before_action :verify_authenticity_token
   before_action :authenticate_user!
   before_action :get_user
+
  
  # @user = current_user
  # @units = @user.units
@@ -9,6 +10,7 @@ class DashboardController < ApplicationController
  def get_user
   @user = current_user
  end
+
     
   def index
   
@@ -104,17 +106,23 @@ class DashboardController < ApplicationController
   end
 
   def stage2
-    @newUnit = Unit.new
-    @newUnit.unit_type = params["unit_type"]
-    @newUnit.era = params["era"]
+    @@newUnit = Unit.new
+
+    @@newUnit.unit_type = params["unit_type"]
+    @@newUnit.era = params["era"]
 
   end
 
   def stage3
-    @newUnit.balance = params["balance"]
+    @@newUnit.balance = params["balance"]
   end
 
   def stage4
+    purch = params["equip_purch"].to_f
+    @@newUnit.balance = @@newUnit.balance - purch
+    @@newUnit.admin_people = params["admin_people"]
+    @@newUnit.tech_people = params["tech_people"]
+    @@newUnit.rating = params["rating"]
   end
   
 end

@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   post '/dashboard/CalcBudget', to: "dashboard#CalcBudget"
   get '/dashboard/stage3', to: 'dashboard#stage3'
   get '/dashboard/stage4', to: 'dashboard#stage4'
+  post '/dashboard/create_wizard', to:'dashboard#create_wizard'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

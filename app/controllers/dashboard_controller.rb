@@ -114,6 +114,7 @@ class DashboardController < ApplicationController
   end
 
   def stage3
+    @@newUnit.unit_name = params["unit_name"]
     @@newUnit.balance = params["balance"]
   end
 
@@ -123,6 +124,27 @@ class DashboardController < ApplicationController
     @@newUnit.admin_people = params["admin_people"]
     @@newUnit.tech_people = params["tech_people"]
     @@newUnit.rating = params["rating"]
+  end
+
+  def create_wizard
+    ammo = params["ammo"].to_f
+    spare = params["spare"].to_f
+    fuel = params["fuel"].to_f
+    ocost = ammo + spare + fuel
+    @@newUnit.ocost = ocost
+    
+    @user.units.create(
+      unit_name: @@newUnit.unit_name,
+      unit_type: @@newUnit.unit_type,
+      admin_people: @@newUnit.admin_people,
+      tech_people: @@newUnit.tech_people,
+      rating: @@newUnit.unit_name,
+      balance: @@newUnit.unit_name,
+      ocost: @@newUnit.unit_name,
+    )
+    
+    redirect_to action: "index"
+
   end
   
 end

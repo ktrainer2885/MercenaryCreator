@@ -1,17 +1,19 @@
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Stage 4: Operating Expenses</h1>
-          <p> Step 1: Buy all the Stuff!</p>
-          <form>
-            Ammunition: <input type="text" name="Ammunition"><br>  
+          <p> Input the cost of the  monthly operating expenses</p>
+          <form action="/dashboard/create_wizard" method ="POST">
+          
+            <div class="form-group">
+                Ammunition: <input type="text" name="ammo">
+            </div>
+            <div class="form-group">
+                Spare Parts: <input type="text" name="spare">
+            </div>
+            <div class="form-group">
+                Fuel: <input type="text" name="fuel">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Create Unit">
+            </div>
           </form>
-          <form>
-            Fuel:<input type="text" name="Fuel">
-          </form>
-         <section class = "row text-center placeholders">
-          <div class= "col-20 col-sm-3 my-auto placeholder">
-            <form action="/dashboard/index">
-              <button type="submit"> Back to Dashboard >></button>
-            </form>
-          </div>
-        </section>
         </main>

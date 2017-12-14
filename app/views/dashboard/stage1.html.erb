@@ -1,39 +1,39 @@
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Stage 1: Define the Force</h1>
-          <p> Select Force Type:</p>
-          <select>
-            <option value="Goverment">Goverment</option>
-            <option value="Mercenary">Mercenary</option>
-            <option value="Pirate">Pirate</option>
-          </select>
-          <p></p>
-          <p>Select Force Background: Inner Sphere/ Periphery Eras:</p>
-          <section class ="row text-center placehoolders">
-           <select>
-            <option value="1">2100-2142</option>
-            <option value="2">2142-2570</option>
-            <option value="3">2571-2650</option>
-            <option value="4">2651-2750</option>
-            <option value="5">2751-2820</option>
-            <option value="6">2821-2900</option>
-            <option value="7">2901-3049</option>
-            <option value="8">3050-3067</option>
-            <option value="9">3068-3085</option>
-            <option value="10">3085-3130</option>
-            <option value="11">Clan Era: 2800-2840</option>
-            <option value="12">Clan Era: 2840-3025</option>
-            <option value="13">Clan Era: 3025-3072</option>
-            <option value="11">Clan Era: 3072-3130</option>
+          
+          <form action="/dashboard/stage2" method="GET" id="stageone">
+            <p> Select Force Type:</p>
+            <div class ="form-group">
+              <select name="unit_type" form="stageone">
+                <option value="Goverment">Goverment</option>
+                <option value="Mercenary">Mercenary</option>
+                <option value="Pirate">Pirate</option>
+              </select>
+            </div>
             
+            <p></p>
+            <p>Select Force Background: Inner Sphere / Periphery / Clan Eras :</p>
+            <section class ="row text-center placeholders form-group">
+             <select name="era" form="stageone">
+              <option value="2100-2142">2100-2142</option>
+              <option value="2142-2570">2142-2570</option>
+              <option value="2571-2650">2571-2650</option>
+              <option value="2651-2750">2651-2750</option>
+              <option value="2751-2820">2751-2820</option>
+              <option value="2821-2900">2821-2900</option>
+              <option value="2901-3049">2901-3049</option>
+              <option value="3050-3067">3050-3067</option>
+              <option value="3068-3085">3068-3085</option>
+              <option value="3085-3130">3085-3130</option>
+              <option value="C2800-2840">Clan Era: 2800-2840</option>
+              <option value="C2840-3025">Clan Era: 2840-3025</option>
+              <option value="C3025-3072">Clan Era: 3025-3072</option>
+              <option value="C3072-3130">Clan Era: 3072-3130</option>
+            </select>
+          </section>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Stage 2">
+            </div>      
+          </form>
 
-
-          </select>
-          </section>     
-         <section class = "row text-center placeholders">
-          <div class= "col-20 col-sm-3 my-auto placeholder">
-            <form action="/dashboard/stage2">
-              <button type="submit">Stage 2 >></button>
-            </form>
-          </div>
-        </section>
         </main>

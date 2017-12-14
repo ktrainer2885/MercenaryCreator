@@ -47,7 +47,6 @@ class DashboardController < ApplicationController
       ocost: params["ocost"],
     )
 
-
     redirect_to action: "index"
   end
   
@@ -62,4 +61,18 @@ class DashboardController < ApplicationController
     Unit.find(params["unit_id"]).destroy
     redirect_to action: "index"
   end
+
+  def stage1
+  end
+
+  def stage2
+    #@newUnit.type = params[""]
+  end
+
+  def stage3
+  end
+
+  def stage4
+  end
+  
 end

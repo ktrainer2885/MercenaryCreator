@@ -138,9 +138,9 @@ class DashboardController < ApplicationController
       unit_type: @@newUnit.unit_type,
       admin_people: @@newUnit.admin_people,
       tech_people: @@newUnit.tech_people,
-      rating: @@newUnit.unit_name,
-      balance: @@newUnit.unit_name,
-      ocost: @@newUnit.unit_name,
+      rating: @@newUnit.rating,
+      balance: @@newUnit.balance,
+      ocost: @@newUnit.ocost,
     )
     
     redirect_to action: "index"

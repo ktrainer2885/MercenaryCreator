@@ -1,4 +1,4 @@
-class Unit < ApplicationRecord
+class UnitWizard < ApplicationRecord
 
 
   def CalcBudget()
@@ -39,7 +39,4 @@ class Unit < ApplicationRecord
     end
     return x
   end
-  
-  @budget = CalcBudget
-  
 end 

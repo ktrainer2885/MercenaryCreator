@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171208234427) do
+ActiveRecord::Schema.define(version: 20171214024037) do
 
   create_table "units", force: :cascade do |t|
     t.integer "user_id"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20171208234427) do
     t.decimal "ocost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "era"
     t.index ["user_id"], name: "index_units_on_user_id"
   end
 

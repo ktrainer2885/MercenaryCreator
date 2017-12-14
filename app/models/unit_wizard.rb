@@ -41,5 +41,5 @@ class Unit < ApplicationRecord
   end
   
   @budget = CalcBudget
-
+  
 end 

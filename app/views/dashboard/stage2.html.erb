@@ -1,15 +1,22 @@
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          
+          <!-- Not working needs to be fixed
           <h1>Stage 2: Select the Force Size</h1>
-          <p> Your Budget will be shown below:</p>
+          <p>Roll for your budget.</p>
+          <%= button_to 'Roll!',  :method=> "CalcBudget" %>
+          <p>You rolled a: <%= @roll %> </p>
+          <p>Your budget is: <%= @budget %> </p>
+          </section>
+        -->
+        
+          <h1>Stage 2: Select the Force Size</h1>
+          <p> Customize your budget:</p>
              <section class ="row text-center placehoolders">
               <div class="col-6 col-sm-3 my-auto placeholder">
-              <p>Budget:</p>
+                <form action="/dashboard/stage3">
+                    <p>Budget: <input type="text" name="budget"></p>
+                    <input type="submit" class="btn btn-primary" value="Stage 3">
+                </form>
             </div>
-          </section>
-          <section class ="row text-center placehoolders">
-             <div class="col-9 col-sm-3 my-auto placeholder">
-             <form action="/dashboard/stage3">
-              <button type="submit">Stage 3 >></button>
-            </form>
           </section>
         </main>

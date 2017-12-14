@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   post '/dashboard/delete_unit', to: "dashboard#delete_unit"
   
   get '/dashboard/stage1', to: "dashboard#stage1"
-  get '/dashboard/stage2', to: "dashboard#stage2" 
+  get '/dashboard/stage2', to: "dashboard#stage2"
+  post '/dashboard/CalcBudget', to: "dashboard#CalcBudget"
   get '/dashboard/stage3', to: 'dashboard#stage3'
   get '/dashboard/stage4', to: 'dashboard#stage4'
 

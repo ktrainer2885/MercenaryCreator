@@ -62,14 +62,56 @@ class DashboardController < ApplicationController
     redirect_to action: "index"
   end
 
+  def CalcBudget
+    @roll = rand(3..18)
+    if @roll == 3
+      @budget = 10000000
+    elsif @roll == 4
+      @budget = 20000000
+    elsif @roll == 5
+      @budget = 30000000
+    elsif @roll == 6
+      @budget = 40000000
+    elsif @roll == 7
+      @budget = 50000000
+    elsif @roll == 8
+      @budget = 60000000
+    elsif @roll == 9
+      @budget = 75000000
+    elsif @roll == 10
+      @budget = 90000000
+    elsif @roll == 11
+      @budget = 105000000
+    elsif @roll == 12
+      @budget = 120000000
+    elsif @roll == 13
+      @budget = 140000000
+    elsif @roll == 14
+      @budget = 160000000
+    elsif @roll == 15
+      @budget = 180000000
+    elsif @roll == 16
+      @budget = 210000000
+    elsif @roll == 17
+      @budget = 240000000
+    elsif @roll == 18
+      @budget = 300000000
+    end
+  end
+  helper_method :CalcBudget
+
   def stage1
   end
 
   def stage2
-    #@newUnit.type = params[""]
+    @newUnit = Unit.new
+    @newUnit.unit_type = params["unit_type"]
+    @newUnit.era = params["era"]
+
   end
 
   def stage3
+    @newUnit.balance = params["balance"]
   end
 
   def stage4
